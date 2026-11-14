@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- racket handle -->
+    <path android:fillColor="#2B2D36" android:pathData="M53,57 L59,63 L43,79 Q40,82 37,79 Q34,76 37,73 Z" />
+    <!-- racket frame and strings -->
+    <path android:fillColor="#FFD23F" android:pathData="M62,44 m-14,0 a14,17 0 1,1 28,0 a14,17 0 1,1 -28,0" />
+    <path android:fillColor="#E9F4FF" android:pathData="M62,44 m-10.5,0 a10.5,13.5 0 1,1 21,0 a10.5,13.5 0 1,1 -21,0" />
+    <path android:strokeColor="#9DB7D6" android:strokeWidth="1.2"
+        android:pathData="M57,32 L57,56 M62,31 L62,57 M67,32 L67,56 M53,38 L71,38 M52,44 L72,44 M53,50 L71,50" />
+    <!-- tennis ball -->
+    <path android:fillColor="#D8F53C" android:pathData="M71,71 m-11,0 a11,11 0 1,1 22,0 a11,11 0 1,1 -22,0" />
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="2" android:fillColor="#00000000"
+        android:pathData="M62,65 Q70,71 62,77 M80,65 Q72,71 80,77" />
+</vector>

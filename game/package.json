@@ -1,0 +1,11 @@
+{
+  "name": "auguste-tennis-game",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun build src/main.js --outfile ../android/app/src/main/assets/game.js --format=iife --minify && cp index.html ../android/app/src/main/assets/index.html"
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/app/src/main/assets/game.js
+android/app/src/main/assets/index.html
+dist/
+local-env.sh
+*.jks
+*.keystore
+signing.properties
+.env
+.env.*
