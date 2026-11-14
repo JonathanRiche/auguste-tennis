@@ -305,10 +305,10 @@ function setShowChar() {
   showSwing = 1.2;
 }
 
+// The friend is always the one named on the level, even if the player picked
+// the same character (Robot against Robot is fine).
 function friendFor(levelIdx) {
-  let f = RALLY_LEVELS[levelIdx].friend;
-  if (f === settings.character) f = f === 6 ? 0 : 6;
-  return f;
+  return RALLY_LEVELS[levelIdx].friend;
 }
 // Put the ball machine or the right friend on the far side.
 function setupFarSide(modeIdx, levelIdx) {
@@ -927,7 +927,7 @@ window.appPause = (p) => {
 document.addEventListener('visibilitychange', () => window.appPause(document.hidden));
 
 // Test hook.
-window.__game = { act, settings, startLevel, get state() { return state; }, get ball() { return cur; }, get player() { return player; }, get hits() { return hits; }, get results() { return results; } };
+window.__game = { act, settings, startLevel, get friend() { return friend && friend.def.id; }, get state() { return state; }, get ball() { return cur; }, get player() { return player; }, get hits() { return hits; }, get results() { return results; } };
 
 setPlayerCharacter();
 setupFarSide(modeSel, levelSel);
